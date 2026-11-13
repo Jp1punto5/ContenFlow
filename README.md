@@ -72,7 +72,7 @@ También se realizaron validaciones de consistencia de datos y referencias entre
 ### Clonar el repositorio
 
 ```bash
-git clone URL_DEL_REPOSITORIO
+git https://github.com/Jp1punto5/ContenFlow
 cd ContentFlow
 ```
 
