@@ -1,0 +1,328 @@
+{
+  "info": {
+    "_postman_id": "9271cb89-65cd-4ee0-9b00-e5d8ee34041e",
+    "name": "API - ContentFlow",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "42744950"
+  },
+  "item": [
+    {
+      "name": "Metodos GET",
+      "item": [
+        {
+          "name": "Get - Estado",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:5000/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get - Usuarios",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:5000/api/usuarios/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "usuarios",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get - Publicaciones",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:5000/api/publicaciones/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "publicaciones",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get - Publicación",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:5000/api/publicaciones/user_d9c7f523273e",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "publicaciones",
+                "user_d9c7f523273e"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get - Usuario",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:5000/api/usuarios/user_ee0d4c96ade3",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "usuarios",
+                "user_ee0d4c96ade3"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Metodos Post",
+      "item": [
+        {
+          "name": "Post - agregar usuarios",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "\r\n{\r\n    \"nombre\": \"Usuario de Prueba\",\r\n    \"correo\": \"prueba.contentflow.001@gmail.com\",\r\n    \"pais\": \"Chile\",\r\n    \"genero\": \"Masculino\",\r\n    \"fecha_registro\": \"2026-11-13T19:00:00\",\r\n    \"dispositivo\": \"Windows\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5000/api/usuarios/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "usuarios",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Post - crear publicaciones",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "\r\n{\r\n    \"usuario_id\": \"user_759cd415c47a\",\r\n    \"contenido\": \"Esta es una publicación de prueba para validar la API ContentFlow.\",\r\n    \"fecha_publicacion\": \"2026-11-13T19:30:00\",\r\n    \"categoria\": \"Tecnología\",\r\n    \"hashtags\": [\"ContentFlow\", \"MongoDB\", \"API\"],\r\n    \"tipo\": \"Texto\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5000/api/publicaciones/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "publicaciones",
+                ""
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Metodos PUT",
+      "item": [
+        {
+          "name": "PUT - Actualizar Usuario",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nombre\": \"Usuario de Prueba Actualizado\",\r\n  \"pais\": \"Chile\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5000/api/usuarios/user_ee0d4c96ade3",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "usuarios",
+                "user_ee0d4c96ade3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PUT - Actualizar Publicación",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"contenido\": \"Publicación actualizada mediante PUT en la API ContentFlow.\",\r\n  \"categoria\": \"Tecnología\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5000/api/publicaciones/pub_72543174b359",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "publicaciones",
+                "pub_72543174b359"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Metodos DELETE",
+      "item": [
+        {
+          "name": "DELETE - Eliminar Publicación",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:5000/api/publicaciones/pub_c63e1e922eab",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "publicaciones",
+                "pub_c63e1e922eab"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DELETE - Eliminar Usuario",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:5000/api/usuarios/user_91ea01c22af6",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "usuarios",
+                "user_91ea01c22af6"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
