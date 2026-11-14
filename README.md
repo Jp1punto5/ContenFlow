@@ -36,7 +36,6 @@ ContentFlow/
 |   └── evidencia_logging_crud.png/
 ├── Postman/
 │   └── API - ContentFlow.postman_collection.json
-├── .env
 ├── .env.example
 ├── .gitignore
 ├── requirements.txt
